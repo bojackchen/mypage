@@ -6,8 +6,8 @@ body {
 .navbar {
     margin-bottom: 0 !important;
     background-color: #F4511E;
-    z-index: 9999;
     border: 0;
+    z-index: 9999;
     font-family: Montserrat, Tahoma, sans-serif;
     font-size: 14px !important;
     line-height: 1.6 !important;
@@ -17,6 +17,15 @@ body {
 
 .navbar li a, .navbar .navbar-brand {
     color: #FFF !important;
+}
+
+.navbar .dropdown .dropdown-menu {
+    background-color: #F4511E !important;
+}
+
+.navbar .container-fluid {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
