@@ -19,10 +19,6 @@ body {
     color: #FFF !important;
 }
 
-.navbar .dropdown .dropdown-menu {
-    background-color: #F4511E !important;
-}
-
 .navbar .container-fluid {
     padding-top: 0;
     padding-bottom: 0;
