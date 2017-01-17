@@ -1,3 +1,10 @@
+$(document).on('click', '.navbar-collapse.in', function(item) {
+    // Collapse navbar automatically after click on an item
+    if( $(item.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+
 $(document).ready(function(){
     // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, footer a[href='#myPage']").on("click", function(event) {
@@ -43,11 +50,7 @@ $(window).scroll(function() {
     });
 });
 
-$("#send").on("click", function() {
-    window.alert("Sorry this function is not available now.")
-});
-
 function searchJump() {
     window.open("http://www.google.com/#q=" + document.getElementById("searchtext").value.split(" ").join("+"),
-        "_blank").focus();
+        "_blank");//.focus();
 }
