@@ -7,7 +7,7 @@ $(document).on('click', '.navbar-collapse.in', function(item) {
 
 $(document).ready(function(){
     // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar a, footer a[href='#myPage']").on("click", function(event) {
+    $(".navbar a, #touch a, #navbrand, footer a[href='#myPage']").on("click", function(event) {
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
