@@ -1,8 +1,6 @@
-$(document).on("click", ".navbar-collapse.in", function(item) {
+$(document).on("click", ".nav a", function(item) {
     // Collapse navbar automatically after click on an item
-    if( $(item.target).is("a") ) {
-        $(this).collapse("hide");
-    }
+    $("#myNavbar").collapse("hide");
 });
 
 $(document).ready(function(){
