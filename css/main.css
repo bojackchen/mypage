@@ -40,6 +40,7 @@ body {
     z-index: 9999;
     font-family: Lato, Tahoma, sans-serif;
     font-size: 12px !important;
+    font-weight: bold;
     line-height: 1.6 !important;
     letter-spacing: 0px;
     border-radius: 0px;
@@ -75,6 +76,7 @@ body {
     padding: 100px 25px;
     margin-bottom: 0;
     font-family: Lato, Tahoma, "Microsoft YaHei UI Light", sans-serif;
+    font-weight: bold;
 }
 
 .bg-grey {

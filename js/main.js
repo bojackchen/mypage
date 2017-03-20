@@ -3,7 +3,7 @@ $(document).on("click", ".nav a", function(item) {
     $("#myNavbar").collapse("hide");
 });
 
-$(document).ready(function(){
+$(document).ready(function() {
     // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, #touch a, #navbrand, footer a[href='#myPage']").on("click", function(event) {
         if (this.hash !== "") {
@@ -24,7 +24,7 @@ $(document).ready(function(){
 // Add googleMap display
 function initMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"), {
-        center: {lat: 22.336346, lng: 114.265460},
+        center: {lat: 22.334936, lng: 114.263531},
         zoom: 16,
         scrollwheel: false,
         draggable: true,
@@ -42,7 +42,7 @@ $(window).scroll(function() {
     $(".slideanim").each(function() {
         var pos = $(this).offset().top;
         var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
+        if (pos < winTop + 700) {
             $(this).addClass("slide");
         }
     });
