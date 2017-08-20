@@ -3,6 +3,12 @@ $(document).on("click", ".nav a", function(item) {
     $("#myNavbar").collapse("hide");
 });
 
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    // Lightbox activation
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+
 $(document).ready(function() {
     // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, #touch a, #navbrand, footer a[href='#myPage']").on("click", function(event) {
