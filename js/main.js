@@ -25,6 +25,9 @@ $(document).on("click", ".navbar a, #touch a, #navbrand, footer a[href='#myPage'
 $(document).ready(function() {
   // Initialize tooltip
   $("[data-toggle='tooltip']").tooltip(); 
+
+  // Add last update time
+  document.getElementById("footertext").innerHTML += ("Last modified: " + document.lastModified);
 })
 
 // Add googleMap display
