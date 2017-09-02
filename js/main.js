@@ -27,7 +27,7 @@ $(document).ready(function() {
   $("[data-toggle='tooltip']").tooltip(); 
 
   // Add last update time
-  document.getElementById("footertext").innerHTML += ("Last modified: " + document.lastModified);
+  document.getElementById("footertext").innerHTML += (" Last modified: " + document.lastModified);
 })
 
 // Add googleMap display
