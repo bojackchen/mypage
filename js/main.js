@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 // Add googleMap display
 function initMap() {
-  var map = new google.maps.Map(document.getElementById("googleMap"), {
+  var map = new google.maps.Map(document.getElementById("gmap"), {
     center: {lat: 22.334936, lng: 114.263531},
     zoom: 16,
     scrollwheel: false,
