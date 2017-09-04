@@ -33,14 +33,14 @@ $(document).ready(function() {
 // Add googleMap display
 function initMap() {
   var map = new google.maps.Map(document.getElementById("googleMap"), {
-    center: {lat: 22.334936, lng: 114.263531},
+    center: {lat: 22.33467, lng: 114.26365},
     zoom: 16,
     scrollwheel: false,
     draggable: true,
   });
 
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(22.336346, 114.265460),
+    position: new google.maps.LatLng(22.33467, 114.26365),
   });
   marker.setMap(map);
 }
