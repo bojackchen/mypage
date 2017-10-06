@@ -1,192 +1,74 @@
 body {
-    font: 400 18px Lato, Tahoma, sans-serif;
-    line-height: 1.6;
+  font: 18px "Montserrat", "Tahoma", "sans-serif" !important;
+  line-height: 1.5 !important;
+  color: #2D2D30 !important;
 }
 
-@media screen and (min-width: 992px) {
-    h1, h2, h3 {
-        letter-spacing: 2px;
-        margin-bottom: 40px !important;
-        margin-top: 40px !important;
-        font-weight: bold;
-    }
+h1 {
+  font: bold 64px "Montserrat", "Microsoft YaHei UI Light", "sans-serif" !important;
+  padding: 40px 20px !important;
+  letter-spacing: 5px;
 }
 
-@media screen and (max-width: 992px) {
-    h1, h2, h3 {
-        letter-spacing: 2px;
-        margin-bottom: 20px !important;
-        margin-top: 20px !important;
-        font-weight: bold;
-    }
+h2 {
+  font: bold 48px "Montserrat", "Microsoft YaHei UI Light", "sans-serif" !important;
+  padding: 30px 15px !important;
+  letter-spacing: 5px;
 }
 
-@media screen and (min-width: 992px) {
-    .container-fluid {
-        padding: 50px 100px;
-    }
+h3 {
+  font: bold 32px "Montserrat", "Microsoft YaHei UI Light", "sans-serif" !important;
+  margin: 20px 10px !important;
+  letter-spacing: 1px;
 }
 
-@media screen and (max-width: 992px) {
-    .container, .container-fluid {
-        padding: 12px 25px;
-    }
+h4 {
+  font: 24px "Montserrat", "Microsoft YaHei UI Light", "sans-serif" !important;
+  margin: 10px 5px !important;
+  letter-spacing: 1px;
 }
 
 .navbar {
-    margin-bottom: 0 !important;
-    background-color: #F4511E;
-    border: 0;
-    z-index: 9999;
-    font-family: Lato, Tahoma, sans-serif;
-    font-size: 12px !important;
-    font-weight: bold;
-    line-height: 1.6 !important;
-    letter-spacing: 0px;
-    border-radius: 0px;
+  background-color: #2D2D30;
+  font: bold 12px "Lato", "Tahoma", "sans-serif";
+  letter-spacing: 1.6px;
 }
 
 .navbar li a, .navbar .navbar-brand {
-    color: #FFF !important;
-    padding-left: 10px;
-    padding-right: 10px;
+  color: #BBB;
+  padding: 12px 5px;
 }
 
-.navbar .container {
-    padding: 0px 25px;
+.navbar li a:hover, .navbar li.active a {
+  color: #FFF;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #F4511E !important;
-    background-color: #FFF !important;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #FFF !important;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
-}
-
-.jumbotron {
-    background-color: #F4511E;
-    color: #FFF;
-    padding: 100px 25px;
-    margin-bottom: 0;
-    font-family: Lato, Tahoma, "Microsoft YaHei UI Light", sans-serif;
-    font-weight: bold;
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .bg-grey {
-    background-color: #F6F6F6;
+  padding: 40px 0px !important;
+  background-color: #2D2D30 !important;
 }
 
-.sidelogo {
-    margin-top: 50px;
+.jumbotron {
+  color: #FFF;
+  padding-top: 250px !important;
+  font-family: "Montserrat", "Microsoft YaHei UI Light", "sans-serif";
+  font-weight: bold;
+}
+
+.input-group-btn {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .logo, .logo-small {
-    display: block;
-    text-align: center;
-    vertical-align: middle;
-    margin: 40px 0;
-    color: #F4511E;
+  margin: 40px 0px !important;
+  color: #2D2D30;
 }
 
 .logo {
-    font-size: 200px;
-}
-
-.logo-small {
-    font-size: 75px;
-}
-
-.btn-inline {
-    margin: 20px 0;
-}
-
-.panel {
-    border: 5px solid #F4511E;
-    border-radius: 10px;
-    transition: box-shadow 0.5s;
-}
-
-.panel:hover {
-    box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.5);
-}
-
-.panel-heading {
-    color: #FFF !important;
-    background-color: #F4511E !important;
-}
-
-.tab-content {
-    padding-top: 20px;
-}
-
-.portfolio {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    padding: 5px 5px;
-    margin: 15px 5px;
-    background-color: #fff;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-}
-
-.modal-dialog {
-    margin-top: 100px;
-}
-
-.googleMap {
-    width: 100%;
-    height: 600px;
-}
-
-img {
-    /* padding-top: 50px; */
-    width: 100%;
-}
-
-footer span {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #F4511E;
-}
-
-.slideanim {
-    visibility:hidden;
-}
-
-.slide {
-    animation-name: slide;
-    -webkit-animation-name: slide; 
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
-    visibility: visible; 
-}
-
-@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(40%);
-    } 
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    } 
-}
-
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(40%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
+  font-size: 300px !important;
 }
