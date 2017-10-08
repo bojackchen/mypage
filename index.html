@@ -11,7 +11,7 @@
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Lato">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -27,7 +27,7 @@
   <button type="button" class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#top">FENG CHEN</a>
+  <a class="navbar-brand font-weight-bold" href="#top">FENG CHEN</a>
   <!-- navigation bar items -->
   <div class="collapse navbar-collapse" id="navigation">
     <ul class="navbar-nav ml-auto">
@@ -41,10 +41,10 @@
   </div>
 </nav>
 <!-- jumbotron, headings and search form-group -->
-<div class="jumbotron text-center bg-grey" id="jumbotron">
-  <h1>Feng CHEN (陳 峰)</h1>
-  <h4>PhD Candidate at HKUST</h4>
-  <h4>Power Management IC Designer</h4>
+<div class="jumbotron text-center" id="jumbotron">
+  <h1 class="font-weight-bold py-5">Feng CHEN (陳 峰)</h1>
+  <h4 class="font-weight-bold my-4">PhD Candidate at HKUST</h4>
+  <h4 class="font-weight-bold my-4">Power Management IC Designer</h4>
   <form class="form-inline">
     <span class="input-group-btn ml-auto mr-auto">
       <input type="text" class="form-control" id="searchtext" size="50" autocomplete="off" placeholder="Quick Search in Google" required>
@@ -56,44 +56,225 @@
 <!-- biography -->
 <div class="container-fluid" id="biography">
   <div class="row">
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center">
-      <span class="fa fa-user-circle logo"></span>
+    <div class="col-sm-12 col-md-4 align-self-center text-center">
+      <span class="fa fa-user-circle"></span>
     </div>
-    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-      <h2 class="pl-0">BIOGRAPHY</h2>
-      <p>Mr. Feng Chen received his B.Eng. degree in Electronic and Information Engineering from <a href="http://www.isee.zju.edu.cn/english/" target="_blank" rel="external">College of Information Science and Electronic Engineering</a> (ISEE), <a href="http://www.zju.edu.cn/english/" target="_blank" rel="external">Zhejiang University</a> (ZJU), Hangzhou, China, in 2015.</p>
-      <p>Mr. Chen is now pursuing his PhD degree under the supervision of professor <a href="http://www.ece.ust.hk/~eemok" target="_blank" rel="external">Philip K. T. Mok</a> in the <a href="http://www.ece.ust.hk/~ipel" target="_blank" rel="external">Integrated Power Electronics Laboraty</a> (IPEL) at <a href="http://www.ece.ust.hk" target="_blank" rel="external">Department of Electronic and Computer Engineering</a> (ECE), <a href="http://www.ust.hk" target="_blank" rel="external">The Hong Kong University of Science and Technology</a> (HKUST), Hong Kong SAR, China.</p>
-      <p>Mr. Chen's research interest involves <a href="https://en.wikipedia.org/wiki/Power_management_integrated_circuit" target="_blank" rel="external">Power Management IC</a> (PMIC) design and analog and <a href="https://en.wikipedia.org/wiki/Mixed-signal_integrated_circuit" target="_blank" rel="external">mixed-signal IC</a> design, especially analog and digital <a href="https://en.wikipedia.org/wiki/Linear_regulator" target="_blank" rel="external">linear regulator</a>.</p>
+    <div class="col-sm-12 col-md-8">
+      <h2 class="font-weight-bold my-5">BIOGRAPHY</h2>
+      <p class="text-justify">Mr. Feng Chen received his B.Eng. degree in Electronic and Information Engineering from <a href="http://www.isee.zju.edu.cn/english/" target="_blank" rel="external">College of Information Science and Electronic Engineering</a> (ISEE), <a href="http://www.zju.edu.cn/english/" target="_blank" rel="external">Zhejiang University</a> (ZJU), Hangzhou, China, in 2015.</p>
+      <p class="text-justify">Mr. Chen is now pursuing his PhD degree under the supervision of professor <a href="http://www.ece.ust.hk/~eemok" target="_blank" rel="external">Philip K. T. Mok</a> in the <a href="http://www.ece.ust.hk/~ipel" target="_blank" rel="external">Integrated Power Electronics Laboraty</a> (IPEL) at <a href="http://www.ece.ust.hk" target="_blank" rel="external">Department of Electronic and Computer Engineering</a> (ECE), <a href="http://www.ust.hk" target="_blank" rel="external">The Hong Kong University of Science and Technology</a> (HKUST), Hong Kong SAR, China.</p>
+      <p class="text-justify">Mr. Chen's research interest involves <a href="https://en.wikipedia.org/wiki/Power_management_integrated_circuit" target="_blank" rel="external">Power Management IC</a> (PMIC) design and analog and <a href="https://en.wikipedia.org/wiki/Mixed-signal_integrated_circuit" target="_blank" rel="external">mixed-signal IC</a> design, especially analog and digital <a href="https://en.wikipedia.org/wiki/Linear_regulator" target="_blank" rel="external">linear regulator</a>.</p>
     </div>
   </div>
 </div>
 <!-- experience -->
-<div class="container-fluid bg-grey" id="experience">
-  <h2 class="text-center">EXPERIENCES</h2>
+<div class="container-fluid" id="experience">
+  <h2 class="text-center font-weight-bold my-5">EXPERIENCE</h2>
   <div class="row">
-    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-      <div class="card">
+    <!-- award -->
+    <div class="col-md-12 col-lg-6">
+      <div class="card m-3">
         <div class="card-header text-center">
-          <h3 class="font-weight-bold">TEACHING</h3>
+          <h3 class="font-weight-bold p-5">AWARD</h3>
         </div>
         <div class="card-body row">
           <!-- header -->
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-            <p class="font-weight-bold">Time</p>
-          </div>
-          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
-            <p class="font-weight-bold">Teaching</p>
-          </div>
-          <!-- row -->
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-            <p>02 / 2017 - 05 / 2017</p>
-          </div>
-          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
-            <dt class="font-weight-bold">TA of ELEC 4430</dt>
-            <dd>Teaching assistant of UG course ELEC 4430 (Integrated Power Electronics)</dd>
-          </div>
+          <p class="font-weight-bold col-4">Time</p>
+          <p class="font-weight-bold col-8">Award</p>
+          <!-- row 1 -->
+          <p class="col-4">09/2015 - now</p>
+          <dl class="col-8">
+            <dt>Postgraduate Studentship, HKUST (<a href="https://pg.ust.hk/cgi-bin/pg/eng/rewrite.php?idrewrite=funding" target="_blank">PGS HKUST</a>)</dt>
+          </dl>
+          <!-- row 2 -->
+          <p class="col-4">06/2015</p>
+          <dl class="col-8">
+            <dt>Excellent Thesis (&lt; 25 %), Zhejiang Univerisity</dt>
+          </dl>
+          <!-- row 3 -->
+          <p class="col-4">11/2013</p>
+          <dl class="col-8">
+            <dt>National scholarship (&lt; 2 %), Zhejiang University</dt>
+          </dl>
         </div>
       </div>
+    </div>
+    <!-- education -->
+    <div class="col-md-12 col-lg-6">
+      <div class="card m-3">
+        <div class="card-header text-center">
+          <h3 class="font-weight-bold p-5">EDUCATION</h3>
+        </div>
+        <div class="card-body row">
+          <!-- header -->
+          <p class="font-weight-bold col-4">Time</p>
+          <p class="font-weight-bold col-8">Venue</p>
+          <!-- row 1 -->
+          <p class="col-4">09/2015 - now</p>
+          <dl class="col-8">
+            <dt>The Hong Kong University of Science and Technology</dt>
+            <dd>He is currently a Ph.D. Candidate in ECE Department, HKUST. His current research interest is Power Management IC Design.</dd>
+          </dl>
+          <!-- row 2 -->
+          <p class="col-4">09/2011 - 06/2015</p>
+          <dl class="col-8">
+            <dt>Zhejiang Univerisity</dt>
+            <dd>He obtained his B.Eng. degree in Electronic and Information Engineering from College of Information Science and Electronic Engineering, Zhejiang University, Hangzhou, China, in 2015.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <!-- teaching -->
+    <div class="col-md-12 col-lg-6">
+      <div class="card m-3">
+        <div class="card-header text-center">
+          <h3 class="font-weight-bold p-5">TEACHING</h3>
+        </div>
+        <div class="card-body row">
+          <!-- header -->
+          <p class="font-weight-bold col-4">Time</p>
+          <p class="font-weight-bold col-8">Teaching</p>
+          <!-- row 1 -->
+          <p class="col-4">09/2017 - 12/2017</p>
+          <dl class="col-8">
+            <dt>TA of ELEC 2400</dt>
+            <dd>Teaching Assistant of lab sessions of UG course ELEC 2400 (Electronic Circuits)</dd>
+          </dl>
+          <!-- row 2 -->
+          <p class="col-4">02/2017 - 05/2017</p>
+          <dl class="col-8">
+            <dt>TA of ELEC 4430</dt>
+            <dd>Teaching Assistant of UG course ELEC 4430 (Integrated Power Electronics)</dd>
+          </dl>
+          <!-- row 3 -->
+          <p class="col-4">09/2016 - 12/2016</p>
+          <dl class="col-8">
+            <dt>TA of ELEC 3400</dt>
+            <dd>Teaching Assistant of UG course ELEC 3400 (Introduction to Integrated Circuits and Systems)</dd>
+          </dl>
+          <!-- row 4 -->
+          <p class="col-4">07/2016 - 08/2016</p>
+          <dl class="col-8">
+            <dt>TA of SISP 1303</dt>
+            <dd>Teaching Assistant of lab sessions of summer course SISP 1303 (Intelligent Sensing Technologies)</dd>
+          </dl>
+          <!-- row 5 -->
+          <p class="col-4">02/2016 - 05/2016</p>
+          <dl class="col-8">
+            <dt>TA of ELEC 2100</dt>
+            <dd>Teaching Assistant of lab sessions of UG course ELEC 2100 (Signals and Systems)</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- publication -->
+<div class="container-fluid" id="publication">
+  <div class="row">
+    <div class="col-sm-12 col-md-9">
+      <h2 class="my-5 font-weight-bold">PUBLICATION</h2>
+      <ul class="nav nav-tabs">
+        <li class="nav-item"><a data-toggle="tab" class="nav-link font-weight-bold active" href="#journal">JOURNAL</a></li>
+        <li class="nav-item"><a data-toggle="tab" class="nav-link font-weight-bold " href="#conference">CONFERENCE</a></li>
+        <li class="nav-item"><a data-toggle="tab" class="nav-link font-weight-bold " href="#presentation">PRESENTATION</a></li>
+        <li class="nav-item"><a data-toggle="tab" class="nav-link font-weight-bold " href="#citation">CITATION</a></li>
+      </ul>
+      <div class="tab-content">
+        <!-- journal list -->
+        <div role="tabpanel" class="tab-pane active" id="journal">
+          <p>[J01] R. Zhang, J. Li, <strong>F. Chen</strong> and Y. Zhao, "<a href="http://dx.doi.org/10.1109/TED.2016.2564996" target="_blank">High-Performance Germanium pMOSFETs With NiGe Metal Source/Drain Fabricated by Microwave Annealing</a>", IEEE Trans. on Electron Devices, vol. 63, no. 7, pp. 2665-2670, July 2016.</p>
+        </div>
+        <!-- conference list -->
+        <div role="tabpanel" class="tab-pane" id="conference">
+          <p>NULL</p>
+        </div>
+        <!-- presentation list -->
+        <div role="tabpanel" class="tab-pane" id="presentation">
+          <p>[P01] <strong>F. Chen</strong>, "<a href="pub/GTABriefing.pdf" target="_blank">Department GTA breifing session sharing</a>", HKUST, August 24, 2017</p>
+        </div>
+        <!-- citation list -->
+        <div role="tabpanel" class="tab-pane" id="citation">
+          <p>View Feng Chen's citation statistics on <a href="https://scholar.google.com.hk/citations?user=lVde7xYAAAAJ" target="_blank">Google Citation</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 align-self-center text-center">
+      <span class="fa fa-book"></span>      
+    </div>
+  </div>
+</div>
+<!-- publication -->
+<div class="container-fluid" id="activity">
+  <h2 class="font-weight-bold text-center my-5">ACTIVITY</h2>
+  <div class="row">
+    <!-- volunteer -->
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center">
+      <span class="fa fa-heartbeat"></span>
+      <h3 class="text-center my-4">VOLUNTEER</h3>
+      <ol>
+        <li class="text-left"><a href="http://connect.ust.hk/opportunities/service_learning_day.html" target="_blank" rel="external">HKUST Service Learning Day</a> (Hike without Trace, Paws for Love, Volunteering at Fung Yuen Butterfly Reserve), Apr. 2017</li>
+        <li class="text-left">Volunteer guide at <a href="http://www.jtia.hk" target="_blank" rel="external">Jao Tsung-I Academy</a>, Hong Kong, 24th Apr. 2016</li>
+      </ol>
+    </div>
+    <!-- service -->
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center">
+      <span class="fa fa-wrench"></span>
+      <h3 class="text-center my-4">SERVICE</h3>
+      <ol>
+        <li class="text-left">Contributor of HKUST <a href="http://usthing.ust.hk" target="_blank" rel="external">USThing</a> project (USThing Android app development), check out <a href="https://www.facebook.com/USThing" target="_blank" rel="external">USThing facebook</a> and <a href="https://github.com/usthing" target="_blank" rel="external">Github repo</a></li>
+      </ol>
+    </div>
+    <!-- sport -->
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center">
+      <span class="fa fa-futbol-o"></span>
+      <h3 class="text-center my-4">SPORT</h3>
+      <ol>
+        <li class="text-left">2017 Standard Chartered Hong Kong Marathon, 10 km, 0:49:35</li>
+        <li class="text-left">Member of HKUST <a href="http://sports.ust.hk/cgi-bin/sports.php?S=5" target="_blank" rel="external">Sport Climbing Students' Society</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<!-- portfolio -->
+<div class="container-fluid" id="portfolio">
+  <h2 class="font-weight-bold text-center my-5">PORTFOLIO</h2>
+</div>
+<!-- contact -->
+<div class="container-fluid" id="contact">
+  <h2 class="font-weight-bold text-center my-5">CONTACT</h2>
+  <div class="row">
+    <div class="col-6 col-sm-6 col-md-3 text-center">
+      <span class="fa fa-map-marker"></span>
+      <p>RM3008, CYT Building, HKUST, Clear Water Bay, Hong Kong, China</p>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 text-center">
+      <span class="fa fa-envelope"></span>
+      <p>Email to fchenaf@connect.ust.hk</p>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 text-center">
+      <span class="fa fa-user"></span>
+      <p>Check out Feng Chen's Personal Website</p>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 text-center">
+      <span class="fa fa-weixin"></span>
+      <p>Check out Feng Chen's Wechat</p>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 text-center">
+      <span class="fa fa-500px"></span>
+      <p>Check out Feng Chen's 500px</p>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 text-center">
+      <span class="fa fa-github"></span>
+      <p>Check out Feng Chen's GitHub</p>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 text-center">
+      <span class="fa fa-question-circle"></span>
+      <p>Check out Feng Chen's Zhihu</p>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 text-center">
+      <span class="fa fa-linkedin-square"></span>
+      <p>Check out Feng Chen's LinkedIn</p>
     </div>
   </div>
 </div>
