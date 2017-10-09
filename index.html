@@ -11,8 +11,8 @@
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <!-- <link rel="stylesheet" href="css/main.css"> -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Lato">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
@@ -31,46 +31,46 @@
   </script>
 </head>
 
-<body id="top" data-spy="scroll" data-target="nav" data-offset="100">
+<body id="top" data-spy="scroll" data-target="nav">
 <!-- navigation bar with auto collapse -->
 <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-  <button type="button" class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navigation">
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand" href="#top">FENG CHEN</a>
   <!-- navigation bar items -->
   <div class="collapse navbar-collapse" id="navigation">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link" href="#biography">BIOGRAPHY</a></li>
-      <li class="nav-item"><a class="nav-link" href="#experience">EXPERIENCE</a></li>
-      <li class="nav-item"><a class="nav-link" href="#publication">PUBLICATION</a></li>
-      <li class="nav-item"><a class="nav-link" href="#activity">ACTIVITY</a></li>
-      <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
-      <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+    <ul class="navbar-nav ml-auto mt-1">
+      <li class="nav-item"><a class="nav-link text-uppercase" href="#biography">biography</a></li>
+      <li class="nav-item"><a class="nav-link text-uppercase" href="#experience">experience</a></li>
+      <li class="nav-item"><a class="nav-link text-uppercase" href="#publication">publication</a></li>
+      <li class="nav-item"><a class="nav-link text-uppercase" href="#activity">activity</a></li>
+      <li class="nav-item"><a class="nav-link text-uppercase" href="#portfolio">portfolio</a></li>
+      <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">contact</a></li>
     </ul>
   </div>
 </nav>
 <!-- jumbotron, headings and search form-group -->
-<div class="jumbotron text-center bg-dark mt-5" id="jumbotron" style="margin-bottom:0px;">
+<div class="jumbotron text-center bg-dark py-5" id="jumbotron" style="margin-bottom:0px;">
   <h1 class="text-white display-3 font-weight-bold py-5">Feng CHEN (陳 峰)</h1>
-  <h4 class="text-white font-weight-bold my-4">PhD Candidate at HKUST</h4>
-  <h4 class="text-white font-weight-bold my-4">Power Management IC Designer</h4>
+  <h3 class="text-white font-weight-bold my-4">PhD Candidate at HKUST</h3>
+  <h3 class="text-white font-weight-bold my-4">Power Management IC Designer</h3>
   <form class="form-inline">
-    <span class="input-group-btn m-auto pb-5">
-      <input type="text" class="form-control" id="searchtext" size="50" autocomplete="off" placeholder="Quick Search in Google" required>
+    <span class="input-group-btn m-auto py-5">
+      <input type="text" class="form-control" id="searchtext" size="40" autocomplete="off" placeholder="Quick Search in Google" required>
       <button type="submit" class="btn btn-dark" onclick="searchJump()"><span class="fa fa-search"></span> Search</button>
     </span>
   </form>
 </div>
 </body>
 <!-- biography -->
-<div class="container-fluid bg-light py-4" id="biography">
+<div class="container-fluid bg-light py-5" id="biography">
   <div class="row">
     <div class="col-sm-12 col-md-4 align-self-center text-center">
-      <span class="fa fa-user-circle slideanim"></span>
+      <span class="fa fa-user-circle logo-lg"></span>
     </div>
     <div class="col-sm-12 col-md-8">
-      <h2 class="font-weight-bold py-5">BIOGRAPHY</h2>
+      <h1 class="font-weight-bold py-5">BIOGRAPHY</h1>
       <p class="text-justify">Mr. Feng Chen received his B.Eng. degree in Electronic and Information Engineering from <a href="http://www.isee.zju.edu.cn/english/" target="_blank" rel="external">College of Information Science and Electronic Engineering</a> (ISEE), <a href="http://www.zju.edu.cn/english/" target="_blank" rel="external">Zhejiang University</a> (ZJU), Hangzhou, China, in 2015.</p>
       <p class="text-justify">Mr. Chen is now pursuing his PhD degree under the supervision of professor <a href="http://www.ece.ust.hk/~eemok" target="_blank" rel="external">Philip K. T. Mok</a> in the <a href="http://www.ece.ust.hk/~ipel" target="_blank" rel="external">Integrated Power Electronics Laboraty</a> (IPEL) at <a href="http://www.ece.ust.hk" target="_blank" rel="external">Department of Electronic and Computer Engineering</a> (ECE), <a href="http://www.ust.hk" target="_blank" rel="external">The Hong Kong University of Science and Technology</a> (HKUST), Hong Kong SAR, China.</p>
       <p class="text-justify">Mr. Chen's research interest involves <a href="https://en.wikipedia.org/wiki/Power_management_integrated_circuit" target="_blank" rel="external">Power Management IC</a> (PMIC) design and analog and <a href="https://en.wikipedia.org/wiki/Mixed-signal_integrated_circuit" target="_blank" rel="external">mixed-signal IC</a> design, especially analog and digital <a href="https://en.wikipedia.org/wiki/Linear_regulator" target="_blank" rel="external">linear regulator</a>.</p>
@@ -78,14 +78,14 @@
   </div>
 </div>
 <!-- experience -->
-<div class="container-fluid py-4" id="experience">
-  <h2 class="text-center font-weight-bold py-5">EXPERIENCE</h2>
+<div class="container-fluid py-5" id="experience">
+  <h1 class="text-center font-weight-bold py-5">EXPERIENCE</h1>
   <div class="row">
     <!-- education -->
     <div class="col-md-12 col-lg-6">
       <div class="card m-3 slideanim">
         <div class="card-header text-center">
-          <h3 class="font-weight-bold p-5">EDUCATION</h3>
+          <h2 class="font-weight-bold p-5">EDUCATION</h2>
         </div>
         <div class="card-body row">
           <!-- header -->
@@ -110,7 +110,7 @@
     <div class="col-md-12 col-lg-6">
       <div class="card m-3 slideanim">
         <div class="card-header text-center">
-          <h3 class="font-weight-bold p-5">TEACHING</h3>
+          <h2 class="font-weight-bold p-5">TEACHING</h2>
         </div>
         <div class="card-body row">
           <!-- header -->
@@ -153,7 +153,7 @@
     <div class="col-md-12 col-lg-6">
       <div class="card m-3 slideanim">
         <div class="card-header text-center">
-          <h3 class="font-weight-bold p-5">AWARD</h3>
+          <h2 class="font-weight-bold p-5">AWARD</h2>
         </div>
         <div class="card-body row">
           <!-- header -->
@@ -180,10 +180,10 @@
   </div>
 </div>
 <!-- publication -->
-<div class="bg-light container-fluid py-4" id="publication">
+<div class="bg-light container-fluid py-5" id="publication">
   <div class="row">
     <div class="col-sm-12 col-md-9">
-      <h2 class="py-5 font-weight-bold">PUBLICATION</h2>
+      <h1 class="py-4 font-weight-bold">PUBLICATION</h1>
       <ul class="nav nav-tabs nav-justified my-4">
         <li class="nav-item"><a data-toggle="tab" class="nav-link font-weight-bold active" href="#journal">JOURNAL</a></li>
         <li class="nav-item"><a data-toggle="tab" class="nav-link font-weight-bold" href="#conference">CONFERENCE</a></li>
@@ -210,18 +210,18 @@
       </div>
     </div>
     <div class="col-sm-12 col-md-3 align-self-center text-center">
-      <span class="fa fa-book slideanim"></span>      
+      <span class="fa fa-book logo-lg slideanim"></span>      
     </div>
   </div>
 </div>
 <!-- publication -->
-<div class="container-fluid py-4" id="activity">
-  <h2 class="font-weight-bold text-center py-5">ACTIVITY</h2>
+<div class="container-fluid py-5" id="activity">
+  <h1 class="font-weight-bold text-center py-4">ACTIVITY</h1>
   <div class="row">
     <!-- volunteer -->
     <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center slideanim">
-      <span class="fa fa-heartbeat"></span>
-      <h3 class="text-center py-4">VOLUNTEER</h3>
+      <span class="fa fa-heartbeat py-4 logo"></span>
+      <h2 class="text-center font-weight-bold py-4">VOLUNTEER</h2>
       <ol>
         <li class="text-left"><a href="http://connect.ust.hk/opportunities/service_learning_day.html" target="_blank" rel="external">HKUST Service Learning Day</a> (Hike without Trace, Paws for Love, Volunteering at Fung Yuen Butterfly Reserve), Apr. 2017</li>
         <li class="text-left">Volunteer guide at <a href="http://www.jtia.hk" target="_blank" rel="external">Jao Tsung-I Academy</a>, Hong Kong, 24th Apr. 2016</li>
@@ -229,16 +229,16 @@
     </div>
     <!-- service -->
     <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center slideanim">
-      <span class="fa fa-wrench"></span>
-      <h3 class="text-center py-4">SERVICE</h3>
+      <span class="fa fa-wrench py-4 logo"></span>
+      <h2 class="text-center font-weight-bold py-4">SERVICE</h2>
       <ol>
         <li class="text-left">Contributor of HKUST <a href="http://usthing.ust.hk" target="_blank" rel="external">USThing</a> project (USThing Android app development), check out <a href="https://www.facebook.com/USThing" target="_blank" rel="external">USThing facebook</a> and <a href="https://github.com/usthing" target="_blank" rel="external">Github repo</a></li>
       </ol>
     </div>
     <!-- sport -->
     <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center slideanim">
-      <span class="fa fa-futbol-o"></span>
-      <h3 class="text-center py-4">SPORT</h3>
+      <span class="fa fa-futbol-o py-4 logo"></span>
+      <h2 class="text-center font-weight-bold py-4">SPORT</h2>
       <ol>
         <li class="text-left">2017 Standard Chartered Hong Kong Marathon, 10 km, 0:49:35</li>
         <li class="text-left">Member of HKUST <a href="http://sports.ust.hk/cgi-bin/sports.php?S=5" target="_blank" rel="external">Sport Climbing Students' Society</a></li>
@@ -247,8 +247,8 @@
   </div>
 </div>
 <!-- portfolio -->
-<div class="bg-light container-fluid py-4" id="portfolio">
-  <h2 class="font-weight-bold text-center py-5">PORTFOLIO</h2>
+<div class="bg-light container-fluid py-5" id="portfolio">
+  <h1 class="font-weight-bold text-center py-4">PORTFOLIO</h1>
   <div class="row px-3">
     <a href="image/sunrise.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Sunrise" data-footer="Get up early one day to catch the flight, and lucky enough to have this sunrise right out of my window"><img src="image/sunrise.jpg" class="img-thumbnail slideanim"></a>
     <a href="image/cherrybee.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Cherry and bee" data-footer="Early spring, one bee is doing its job on a newly blossomed cherry"><img src="image/cherrybee.jpg" class="img-thumbnail slideanim"></a>
@@ -265,51 +265,51 @@
   </div>
 </div>
 <!-- contact -->
-<div class="container-fluid py-4" id="contact">
-  <h2 class="font-weight-bold text-center py-5">CONTACT</h2>
+<div class="container-fluid py-5" id="contact">
+  <h1 class="font-weight-bold text-center py-4">CONTACT</h1>
   <div class="row">
     <div class="col-6 col-sm-6 col-md-3 text-center slideanim">
-      <span class="fa fa-map-marker mb-3"></span>
+      <span class="fa fa-map-marker logo-sm py-4"></span>
       <p>RM3008, CYT Building, HKUST, Clear Water Bay, Hong Kong, China</p>
     </div>
     <div class="col-6 col-sm-6 col-md-3 text-center slideanim">
-      <span class="fa fa-envelope mb-3"></span>
+      <span class="fa fa-envelope logo-sm py-4"></span>
       <p>Email to <a href="mailto:fchenaf@connect.ust.hk">fchenaf@connect.ust.hk</a></p>
     </div>
     <div class="col-6 col-sm-6 col-md-3 text-center slideanim">
-      <span class="fa fa-user mb-3"></span>
+      <span class="fa fa-user logo-sm py-4"></span>
       <p>Check out Feng Chen's <a href="https://bojackchen.github.io" target="_blank">Personal Website</a></p>
     </div>
     <div class="col-6 col-sm-6 col-md-3 text-center slideanim">
-      <span class="fa fa-weixin mb-3"></span>
+      <span class="fa fa-weixin logo-sm py-4"></span>
       <p>Check out Feng Chen's <a href="https://bojackchen.github.io/about/wechat" target="_blank">Wechat</a></p>
     </div>
     <div class="col-6 col-sm-6 col-md-3 text-center slideanim">
-      <span class="fa fa-500px mb-3"></span>
+      <span class="fa fa-500px logo-sm py-4"></span>
       <p>Check out Feng Chen's <a href="https://500px.com/bojackchen" target="_blank">500px</a></p>
     </div>
     <div class="col-6 col-sm-6 col-md-3 text-center slideanim">
-      <span class="fa fa-github mb-3"></span>
+      <span class="fa fa-github logo-sm py-4"></span>
       <p>Check out Feng Chen's <a href="https://github.com/bojackchen" target="_blank">GitHub</a></p>
     </div>
     <div class="col-6 col-sm-6 col-md-3 text-center slideanim">
-      <span class="fa fa-question-circle mb-3"></span>
+      <span class="fa fa-question-circle logo-sm py-4"></span>
       <p>Check out Feng Chen's <a href="https://zhihu.com/people/bojackchen" target="_blank">Zhihu</a></p>
     </div>
     <div class="col-6 col-sm-6 col-md-3 text-center slideanim">
-      <span class="fa fa-linkedin-square mb-3"></span>
+      <span class="fa fa-linkedin-square logo-sm py-4"></span>
       <p>Check out Feng Chen's <a href="https://linkedin.com/in/bojackchen" target="_blank">LinkedIn</a></p>
     </div>
   </div>
 </div>
 <!-- gmap -->
 <div class="bg-light container-fluid p-5" id="gmap">
-  <div id="googleMap" class="googleMap my-5 w-100" style="height:600px;"></div>
-  <img class="img-fluid w-100" src="image/HKUST.jpg" alt="HKUST" title="Full HKUST view taken by Martin Yeung from above, HKUST, 08/12/2016">
+  <div class="googleMap mb-5" id="googleMap" style="height:600px;"></div>
+  <img class="img-fluid mb-5" src="image/HKUST.jpg" alt="HKUST" title="Full HKUST view taken by Martin Yeung from above, HKUST, 08/12/2016">
 </div>
 <!-- footer -->
-<footer class="bg-light container-fluid pt-4 text-center" id="footer">
-  <a class="fa fa-chevron-up" href="#top" title="TOP"></a>
+<footer class="bg-light container-fluid text-center" id="footer">
+  <a href="#top" title="TOP"><span class="fa fa-chevron-up"></span></a>
   <p class="text-muted py-4 mb-0" id="footertext">&copy; 2016 Feng Chen. All rights reserved. (<a href="https://github.com/bojackchen/mypage" target="_blank">download</a> this template)</p>
 </footer>
 

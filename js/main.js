@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // Add last update time
   document.getElementById("footertext").innerHTML += (" Last modified: " + document.lastModified);
-})
+});
 
 $(document).on("click", "nav a", function(item) {
   // Collapse navbar automatically after click on an item
@@ -19,7 +19,18 @@ $(document).on("click", "nav a, a[href='#top']", function(event) {
       window.location.hash = hash;
     });
   }
-})
+});
+
+// Slide animation of logos
+$(window).scroll(function() {
+  $(".slideanim").each(function() {
+    var pos = $(this).offset().top;
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 800) {
+      $(this).addClass("slide");
+    }
+  });
+});
 
 // Add googleMap display
 function initMap() {
@@ -36,17 +47,6 @@ function initMap() {
   marker.setMap(map);
 }
 google.maps.event.addDomListener(window, "load", initMap);
-
-// Slide animation of logos
-$(window).scroll(function() {
-  $(".slideanim").each(function() {
-    var pos = $(this).offset().top;
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 700) {
-      $(this).addClass("slide");
-    }
-  });
-});
 
 function searchJump() {
   window.open("http://www.google.com/#q=" + document.getElementById("searchtext").value.split(" ").join("+"),

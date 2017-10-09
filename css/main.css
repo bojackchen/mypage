@@ -1,74 +1,55 @@
 body {
-  font: 18px "Montserrat", "Tahoma", "sans-serif" !important;
+  font: 18px "Montserrat", "Microsoft YaHei UI Light", "sans-serif" !important;
   line-height: 1.5 !important;
-  color: #2D2D30 !important;
 }
 
-h1 {
-  font: bold 64px "Montserrat", "Microsoft YaHei UI Light", "sans-serif" !important;
-  padding: 40px 20px !important;
-  letter-spacing: 5px;
+h1, h2 { letter-spacing: 8px; }
+
+h3 { letter-spacing: 4px; }
+
+#navigation ul {
+  font: bold 12px "Montserrat", "Microsoft YaHei UI Light", "sans-serif";
+  letter-spacing: 1.5px;
 }
 
-h2 {
-  font: bold 48px "Montserrat", "Microsoft YaHei UI Light", "sans-serif" !important;
-  padding: 30px 15px !important;
-  letter-spacing: 5px;
+#navigation a:hover { color: rgba(255, 255, 255, 1); }
+
+.navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; }
+
+.logo-lg { font-size: 200px !important; }
+
+.logo { font-size: 75px !important; }
+
+.logo-sm { font-size: 40px !important; }
+
+.slideanim { visibility: hidden; }
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
 }
 
-h3 {
-  font: bold 32px "Montserrat", "Microsoft YaHei UI Light", "sans-serif" !important;
-  margin: 20px 10px !important;
-  letter-spacing: 1px;
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
-h4 {
-  font: 24px "Montserrat", "Microsoft YaHei UI Light", "sans-serif" !important;
-  margin: 10px 5px !important;
-  letter-spacing: 1px;
-}
-
-.navbar {
-  background-color: #2D2D30;
-  font: bold 12px "Lato", "Tahoma", "sans-serif";
-  letter-spacing: 1.6px;
-}
-
-.navbar li a, .navbar .navbar-brand {
-  color: #BBB;
-  padding: 12px 5px;
-}
-
-.navbar li a:hover, .navbar li.active a {
-  color: #FFF;
-}
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.bg-grey {
-  padding: 40px 0px !important;
-  background-color: #2D2D30 !important;
-}
-
-.jumbotron {
-  color: #FFF;
-  padding-top: 250px !important;
-  font-family: "Montserrat", "Microsoft YaHei UI Light", "sans-serif";
-  font-weight: bold;
-}
-
-.input-group-btn {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.logo, .logo-small {
-  margin: 40px 0px !important;
-  color: #2D2D30;
-}
-
-.logo {
-  font-size: 300px !important;
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
 }
