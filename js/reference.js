@@ -1,24 +1,33 @@
-$(document).ready(function() {
-  // Add last update time
-  document.getElementById("footertext").innerHTML += (" Last modified: " + document.lastModified);
-})
-
-$(document).on("click", "nav a", function(item) {
+$(document).on("click", ".nav a", function(item) {
   // Collapse navbar automatically after click on an item
-  $("#navigation").collapse("hide");
+  $("#myNavbar").collapse("hide");
 });
 
-$(document).on("click", "nav a, a[href='#top']", function(event) {
+$(document).on("click", "[data-toggle='lightbox']", function(event) {
+  // Lightbox activation
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+
+$(document).on("click", ".navbar a, #touch a, #navbrand, footer a[href='#myPage']", function(event) {
   // Add smooth scrolling to all links in navbar + footer link
   if (this.hash !== "") {
     event.preventDefault();
     var hash = this.hash;
     $("html, body").animate({
       scrollTop: $(hash).offset().top
-    }, 800, function(){
+    }, 900, function(){
       window.location.hash = hash;
     });
   }
+})
+
+$(document).ready(function() {
+  // Initialize tooltip
+  $("[data-toggle='tooltip']").tooltip(); 
+
+  // Add last update time
+  document.getElementById("footertext").innerHTML += (" Last modified: " + document.lastModified);
 })
 
 // Add googleMap display
