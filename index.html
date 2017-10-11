@@ -12,6 +12,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -21,6 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -201,7 +203,7 @@
         </div>
         <!-- presentation list -->
         <div role="tabpanel" class="tab-pane" id="presentation">
-          <p>[P01] <strong>F. Chen</strong>, "<a href="pub/GTABriefing.pdf" target="_blank">Department GTA breifing session sharing</a>", HKUST, August 24, 2017</p>
+          <p>[P01] <strong>F. Chen</strong>, "<a data-fancybox data-type="iframe" data-caption="GTA briefing session sharing" data-src="pub/GTABriefing.pdf" href="">Department GTA breifing session sharing</a>", HKUST, August 24, 2017</p>
         </div>
         <!-- citation list -->
         <div role="tabpanel" class="tab-pane" id="citation">
@@ -250,18 +252,18 @@
 <div class="bg-light container-fluid py-5" id="portfolio">
   <h1 class="font-weight-bold text-center py-4">PORTFOLIO</h1>
   <div class="row px-3">
-    <a href="image/sunrise.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Sunrise" data-footer="Get up early one day to catch the flight, and lucky enough to have this sunrise right out of my window"><img src="image/sunrise.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/cherrybee.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Cherry and bee" data-footer="Early spring, one bee is doing its job on a newly blossomed cherry"><img src="image/cherrybee.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/diy.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="DIY" data-footer="Break down my obselete cellphone and DIY it to be like this"><img src="image/diy.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/bird.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Bird" data-footer="One bird resting on top of the kapok tree"><img src="image/bird.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/bedfordgarden.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Bedford Garden" data-footer="Bedford Garden, a community in Hong Kong"><img src="image/bedfordgarden.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/sunset.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Sunset" data-footer="Sunset at Wu Kai Sha Beach"><img src="image/sunset.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/cargoship.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Cargoship" data-footer="One cargoship leaving, one arriving, and one fishing boat"><img src="image/cargoship.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/nightscape.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Nightscape" data-footer="Nightscape of Victoria Harbour, Hong Kong"><img src="image/nightscape.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/lotus.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Lotus" data-footer="Lotus in Summer Palace, Beijing"><img src="image/lotus.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/choihung.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Choi Hung Estate" data-footer="Choi Hung Estate, one of the oldest public housing estates in Hong Kong"><img src="image/choihung.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/waterfall.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Waterfall" data-footer="Near HKUST there is one mountain with plenty of springs in it, and this is the most magnificent one"><img src="image/waterfall.jpg" class="img-thumbnail slideanim"></a>
-    <a href="image/crowded.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-title="Crowded" data-footer="Several public housing estates crowded together to have this view"><img src="image/crowded.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/sunrise.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Sunrise" data-footer="Get up early one day to catch the flight, and lucky enough to have this sunrise right out of my window"><img src="image/sunrise.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/cherrybee.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Cherry and bee" data-footer="Early spring, one bee is doing its job on a newly blossomed cherry"><img src="image/cherrybee.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/diy.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="DIY" data-footer="Break down my obselete cellphone and DIY it to be like this"><img src="image/diy.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/bird.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Bird" data-footer="One bird resting on top of the kapok tree"><img src="image/bird.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/bedfordgarden.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Bedford Garden" data-footer="Bedford Garden, a community in Hong Kong"><img src="image/bedfordgarden.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/sunset.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Sunset" data-footer="Sunset at Wu Kai Sha Beach"><img src="image/sunset.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/cargoship.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Cargoship" data-footer="One cargoship leaving, one arriving, and one fishing boat"><img src="image/cargoship.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/nightscape.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Nightscape" data-footer="Nightscape of Victoria Harbour, Hong Kong"><img src="image/nightscape.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/lotus.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Lotus" data-footer="Lotus in Summer Palace, Beijing"><img src="image/lotus.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/choihung.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Choi Hung Estate" data-footer="Choi Hung Estate, one of the oldest public housing estates in Hong Kong"><img src="image/choihung.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/waterfall.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Waterfall" data-footer="Near HKUST there is one mountain with plenty of springs in it, and this is the most magnificent one"><img src="image/waterfall.jpg" class="img-thumbnail slideanim"></a>
+    <a data-fancybox="gallery" href="image/crowded.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Crowded" data-footer="Several public housing estates crowded together to have this view"><img src="image/crowded.jpg" class="img-thumbnail slideanim"></a>
   </div>
 </div>
 <!-- contact -->
@@ -304,7 +306,7 @@
 </div>
 <!-- gmap -->
 <div class="bg-light container-fluid p-5" id="gmap">
-  <div class="googleMap mb-5" id="googleMap" style="height:600px;"></div>
+  <div class="googleMap mb-5" id="googleMap"></div>
   <img class="img-fluid mb-5" src="image/HKUST.jpg" alt="HKUST" title="Full HKUST view taken by Martin Yeung from above, HKUST, 08/12/2016">
 </div>
 <!-- footer -->

@@ -24,6 +24,8 @@ h3 { letter-spacing: 4px; }
 
 .logo-sm { font-size: 40px !important; }
 
+.googleMap { height: 600px; }
+
 .slideanim { visibility: hidden; }
 
 .slide {
