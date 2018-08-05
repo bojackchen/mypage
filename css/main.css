@@ -7,14 +7,14 @@ h1, h2 { letter-spacing: 8px; }
 
 h3 { letter-spacing: 4px; }
 
+.navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; }
+
 #navigation ul {
   font: bold 12px "Montserrat", "Microsoft YaHei UI Light", "sans-serif";
   letter-spacing: 1.5px;
 }
 
 #navigation a:hover { color: rgba(255, 255, 255, 1); }
-
-.navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; }
 
 .card:hover { box-shadow: 2rem 0 8rem rgba(0, 0, 0, 0.2); }
 
@@ -23,6 +23,19 @@ h3 { letter-spacing: 4px; }
 .logo { font-size: 75px !important; }
 
 .logo-sm { font-size: 40px !important; }
+
+.img-column { flex: 25%; }
+
+.card-column { flex: 50%; }
+
+@media screen and (max-width: 1024px) {
+  .img-column { flex: 50%; }
+  .card-column { flex: 100%; }
+}
+
+@media screen and (max-width: 640px) {
+  .img-column { flex: 100%; }
+}
 
 .googleMap { height: 600px; }
 

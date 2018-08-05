@@ -9,7 +9,6 @@
 
   <title>Feng CHEN, IPEL, HKUST, Power Management IC Designer</title>
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="css/main.css">
@@ -17,11 +16,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClwdsafa69TRlq1a2ir6JDsKH_IP_ev10"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClwdsafa69TRlq1a2ir6JDsKH_IP_ev10"></script>
   <script src="js/main.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -55,7 +54,7 @@
   </div>
 </nav>
 <!-- jumbotron, headings and search form-group -->
-<div class="jumbotron text-center bg-dark py-5" id="jumbotron" style="margin-bottom:0px;">
+<div class="jumbotron text-center bg-dark py-5 mb-0" id="jumbotron">
   <h1 class="text-white display-3 font-weight-bold py-5">Feng CHEN (陳 峰)</h1>
   <h3 class="text-white font-weight-bold my-4">PhD Candidate at HKUST</h3>
   <h3 class="text-white font-weight-bold my-4">Power Management IC Designer</h3>
@@ -84,35 +83,10 @@
 <!-- experience -->
 <div class="container-fluid py-5" id="experience">
   <h1 class="text-center font-weight-bold py-5">EXPERIENCE</h1>
-  <div class="row card-colums">
-    <!-- education -->
-    <div class="col-lg-6">
-      <div class="card m-3 slideanim">
-        <div class="card-header text-center">
-          <h2 class="font-weight-bold p-5">EDUCATION</h2>
-        </div>
-        <div class="card-body row">
-          <!-- header -->
-          <p class="font-weight-bold col-4">Time</p>
-          <p class="font-weight-bold col-8">Venue</p>
-          <!-- row 1 -->
-          <p class="col-4">09/2015 - now</p>
-          <dl class="col-8">
-            <dt>The Hong Kong University of Science and Technology</dt>
-            <dd>He is currently a Ph.D. Candidate in ECE Department, HKUST. His current research interest is Power Management IC Design.</dd>
-          </dl>
-          <!-- row 2 -->
-          <p class="col-4">09/2011 - 06/2015</p>
-          <dl class="col-8">
-            <dt>Zhejiang Univerisity</dt>
-            <dd>He obtained his B.Eng. degree in Electronic and Information Engineering from College of Information Science and Electronic Engineering, Zhejiang University, Hangzhou, China, in 2015.</dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-    <!-- teaching -->
-    <div class="col-lg-6">
-      <div class="card m-3 slideanim">
+  <div class="d-flex flex-wrap px-2">
+    <div class="card-column px-2">
+      <!-- teaching -->
+      <div class="card mx-2 mb-5 slideanim">
         <div class="card-header text-center">
           <h2 class="font-weight-bold p-5">TEACHING</h2>
         </div>
@@ -153,9 +127,32 @@
         </div>
       </div>
     </div>
-    <!-- award -->
-    <div class="col-lg-6">
-      <div class="card m-3 slideanim">
+    <div class="card-column px-2">
+      <!-- education -->
+      <div class="card mx-2 mb-5 slideanim">
+        <div class="card-header text-center">
+          <h2 class="font-weight-bold p-5">EDUCATION</h2>
+        </div>
+        <div class="card-body row">
+          <!-- header -->
+          <p class="font-weight-bold col-4">Time</p>
+          <p class="font-weight-bold col-8">Venue</p>
+          <!-- row 1 -->
+          <p class="col-4">09/2015 - now</p>
+          <dl class="col-8">
+            <dt>The Hong Kong University of Science and Technology</dt>
+            <dd>He is currently a Ph.D. Candidate in ECE Department, HKUST. His current research interest is Power Management IC Design.</dd>
+          </dl>
+          <!-- row 2 -->
+          <p class="col-4">09/2011 - 06/2015</p>
+          <dl class="col-8">
+            <dt>Zhejiang Univerisity</dt>
+            <dd>He obtained his B.Eng. degree in Electronic and Information Engineering from College of Information Science and Electronic Engineering, Zhejiang University, Hangzhou, China, in 2015.</dd>
+          </dl>
+        </div>
+      </div>
+      <!-- award -->
+      <div class="card mx-2 mb-5 slideanim">
         <div class="card-header text-center">
           <h2 class="font-weight-bold p-5">AWARD</h2>
         </div>
@@ -253,19 +250,27 @@
 <!-- portfolio -->
 <div class="bg-light container-fluid py-5" id="portfolio">
   <h1 class="font-weight-bold text-center py-4">PORTFOLIO</h1>
-  <div class="row px-3">
-    <a data-fancybox="gallery" href="image/mountain.jpg" class="col-12 col-sm-12 col-md-6 col-xl-6 p-3" data-caption="Roads down<br>On the top of Tai Mo Shan, which is the highest mountain in Hong Kong, the roads down are dangling."><img src="image/mountain.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/nightscape.jpg" class="col-12 col-sm-12 col-md-6 col-xl-6 p-3" data-caption="Nightscape<br>Panorama nightscape of the Victoria Harbour, Hong Kong"><img src="image/nightscape.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/sundown.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Night view of Victoria Harbour<br>In the middle of a lunar month, it is the view of Victoria Harbour right after sundown. The color is magical."><img src="image/sundown.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/sunrise.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Sunrise<br>Get up really early one day for early flight, and catch this right out of the window."><img src="image/sunrise.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/UST.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="HKUST<br>This is the view of HKUST and surrounding comminity from the top of Razor's Hill."><img src="image/UST.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/ecllipse.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Total lunar ellipse<br>An amazing total lunar ecllipse. The color of the moon turns blood like."><img src="image/ecllipse.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/sunset2.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Sunset<br>The sunset on the top of Mount High West."><img src="image/sunset2.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/diy.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="DIY<br>Break down my obselete cellphone and D.I.Y. it to be like this."><img src="image/diy.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/choihung.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Choi Hung Estate<br>Choi Hung Estate, one of the oldest public housing estates in Hong Kong"><img src="image/choihung.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/crowded.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Crowded<br>This is the cramped space between buildings."><img src="image/crowded.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/cherrybee.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 offset-xl-3 p-3" data-caption="Cherry and bee<br>Early spring, one bee is doing its job on a newly blossomed cherry."><img src="image/cherrybee.jpg" class="img-thumbnail slideanim"></a>
-    <a data-fancybox="gallery" href="image/sunset.jpg" class="col-12 col-sm-6 col-md-4 col-xl-3 p-3" data-caption="Sunset<br>Sunset at Wu Kai Sha Beach."><img src="image/sunset.jpg" class="img-thumbnail slideanim"></a>
+  <div class="d-flex flex-wrap px-2">
+    <div class="img-column px-2">
+      <a data-fancybox="gallery" href="image/mountain.jpg" data-caption="Roads down<br>On the top of Tai Mo Shan, which is the highest mountain in Hong Kong, the roads down are dangling."><img src="image/mountain.jpg" class="img-thumbnail my-2 slideanim"></a>
+      <a data-fancybox="gallery" href="image/sunrise.jpg" data-caption="Sunrise<br>Get up really early one day for early flight, and catch this right out of the window."><img src="image/sunrise.jpg" class="img-thumbnail my-2 slideanim"></a>
+      <a data-fancybox="gallery" href="image/sunset2.jpg" data-caption="Sunset<br>The sunset on the top of Mount High West."><img src="image/sunset2.jpg" class="img-thumbnail my-2 slideanim"></a>
+    </div>
+    <div class="img-column px-2">
+      <a data-fancybox="gallery" href="image/UST.jpg" data-caption="HKUST<br>This is the view of HKUST and surrounding comminity from the top of Razor's Hill."><img src="image/UST.jpg" class="img-thumbnail my-2 slideanim"></a>
+      <a data-fancybox="gallery" href="image/sundown.jpg" data-caption="Night view of Victoria Harbour<br>In the middle of a lunar month, it is the view of Victoria Harbour right after sundown. The color is magical."><img src="image/sundown.jpg" class="img-thumbnail my-2 slideanim"></a>
+      <a data-fancybox="gallery" href="image/ecllipse.jpg" data-caption="Total lunar ellipse<br>An amazing total lunar ecllipse. The color of the moon turns blood like."><img src="image/ecllipse.jpg" class="img-thumbnail my-2 slideanim"></a>
+      <a data-fancybox="gallery" href="image/nightscape.jpg" data-caption="Nightscape<br>Panorama nightscape of the Victoria Harbour, Hong Kong"><img src="image/nightscape.jpg" class="img-thumbnail my-2 slideanim"></a>
+    </div>
+    <div class="img-column px-2">
+      <a data-fancybox="gallery" href="image/diy.jpg" data-caption="DIY<br>Break down my obselete cellphone and D.I.Y. it to be like this."><img src="image/diy.jpg" class="img-thumbnail my-2 slideanim"></a>
+      <a data-fancybox="gallery" href="image/choihung.jpg" data-caption="Choi Hung Estate<br>Choi Hung Estate, one of the oldest public housing estates in Hong Kong"><img src="image/choihung.jpg" class="img-thumbnail my-2 slideanim"></a>
+      <a data-fancybox="gallery" href="image/cherrybee.jpg" data-caption="Cherry and bee<br>Early spring, one bee is doing its job on a newly blossomed cherry."><img src="image/cherrybee.jpg" class="img-thumbnail my-2 slideanim"></a>
+    </div>
+    <div class="img-column px-2">
+      <a data-fancybox="gallery" href="image/crowded.jpg" data-caption="Crowded<br>This is the cramped space between buildings."><img src="image/crowded.jpg" class="img-thumbnail my-2 slideanim"></a>
+      <a data-fancybox="gallery" href="image/sunset.jpg" data-caption="Sunset<br>Sunset at Wu Kai Sha Beach."><img src="image/sunset.jpg" class="img-thumbnail my-2 slideanim"></a>
+    </div>
   </div>
 </div>
 <!-- contact -->
@@ -274,7 +279,7 @@
   <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3 text-center slideanim">
       <span class="fas fa-map-marker-alt logo-sm py-4"></span>
-      <p>RM3008, CYT Building, HKUST, Clear Water Bay, Hong Kong, China</p>
+      <p>RM3008, CYT Bldg, HKUST, Clear Water Bay, Hong Kong, China</p>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3 text-center slideanim">
       <span class="fas fa-envelope logo-sm py-4"></span>
