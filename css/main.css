@@ -24,19 +24,6 @@ h3 { letter-spacing: 4px; }
 
 .logo-sm { font-size: 40px !important; }
 
-.img-column { flex: 25%; }
-
-.card-column { flex: 50%; }
-
-@media screen and (max-width: 1024px) {
-  .img-column { flex: 50%; }
-  .card-column { flex: 100%; }
-}
-
-@media screen and (max-width: 640px) {
-  .img-column { flex: 100%; }
-}
-
 .googleMap { height: 600px; }
 
 .slideanim { visibility: hidden; }
