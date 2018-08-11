@@ -11,10 +11,10 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -55,11 +55,11 @@
 </nav>
 <!-- jumbotron, headings and search form-group -->
 <div class="jumbotron text-center bg-dark py-5 mb-0" id="jumbotron">
-  <h1 class="text-white display-3 font-weight-bold py-5">Feng CHEN (陳 峰)</h1>
+  <h1 class="display-4 text-white font-weight-bold py-5">Feng CHEN (陳 峰)</h1>
   <h3 class="text-white font-weight-bold my-4">PhD Candidate at HKUST</h3>
   <h3 class="text-white font-weight-bold my-4">Power Management IC Designer</h3>
-  <form class="form-inline">
-    <span class="input-group-btn m-auto py-5">
+  <form class="form-inline d-flex justify-content-center align-content-center">
+    <span class="input-group-btn py-5">
       <input type="text" class="form-control" id="searchtext" size="40" autocomplete="off" placeholder="Quick Search in Google" required>
       <button type="submit" class="btn btn-dark" onclick="searchJump()"><span class="fas fa-search"></span> Search</button>
     </span>
@@ -69,13 +69,13 @@
 <!-- biography -->
 <div class="container-fluid bg-light py-5" id="biography">
   <div class="row">
-    <div class="col-md-4 align-self-center text-center">
+    <div class="col-md-4 d-flex justify-content-center align-self-center">
       <span class="fas fa-user-circle logo-lg"></span>
     </div>
     <div class="col-md-8 text-justify">
       <h1 class="font-weight-bold py-5">BIOGRAPHY</h1>
-      <p>Mr. Feng Chen received his B.Eng. degree in Electronic and Information Engineering from <a href="http://www.isee.zju.edu.cn/english/" target="_blank" rel="external">College of Information Science and Electronic Engineering</a> (ISEE), <a href="http://www.zju.edu.cn/english/" target="_blank" rel="external">Zhejiang University</a> (ZJU), Hangzhou, China, in 2015.</p>
-      <p>Mr. Chen is now pursuing his PhD degree under the supervision of professor <a href="http://www.ece.ust.hk/~eemok" target="_blank" rel="external">Philip K. T. Mok</a> in the <a href="http://www.ece.ust.hk/~ipel" target="_blank" rel="external">Integrated Power Electronics Laboraty</a> (IPEL) at <a href="http://www.ece.ust.hk" target="_blank" rel="external">Department of Electronic and Computer Engineering</a> (ECE), <a href="http://www.ust.hk" target="_blank" rel="external">The Hong Kong University of Science and Technology</a> (HKUST), Hong Kong SAR, China.</p>
+      <p>Mr. Feng Chen received his B.E. degree in Electronic and Information Engineering from <a href="http://www.isee.zju.edu.cn/english/" target="_blank" rel="external">College of Information Science and Electronic Engineering</a> (ISEE), <a href="http://www.zju.edu.cn/english/" target="_blank" rel="external">Zhejiang University</a> (ZJU), Hangzhou, China, in 2015.</p>
+      <p>Mr. Chen is now pursuing his Ph.D. degree under the supervision of professor <a href="http://www.ece.ust.hk/~eemok" target="_blank" rel="external">Philip K. T. Mok</a> in the <a href="http://www.ece.ust.hk/~ipel" target="_blank" rel="external">Integrated Power Electronics Laboraty</a> (IPEL) at <a href="http://www.ece.ust.hk" target="_blank" rel="external">Department of Electronic and Computer Engineering</a> (ECE), <a href="http://www.ust.hk" target="_blank" rel="external">The Hong Kong University of Science and Technology</a> (HKUST), Hong Kong SAR, China.</p>
       <p>Mr. Chen's research interest involves <a href="https://en.wikipedia.org/wiki/Power_management_integrated_circuit" target="_blank" rel="external">Power Management IC</a> (PMIC) design and analog and <a href="https://en.wikipedia.org/wiki/Mixed-signal_integrated_circuit" target="_blank" rel="external">mixed-signal IC</a> design, especially analog and digital <a href="https://en.wikipedia.org/wiki/Linear_regulator" target="_blank" rel="external">linear regulator</a>.</p>
     </div>
   </div>
@@ -87,8 +87,8 @@
     <div class="col-lg-6">
       <!-- teaching -->
       <div class="card mx-2 mb-5 slideanim">
-        <div class="card-header text-center">
-          <h2 class="font-weight-bold p-5">TEACHING</h2>
+        <div class="card-header">
+          <h2 class="text-center font-weight-bold p-5">TEACHING</h2>
         </div>
         <div class="card-body row">
           <!-- header -->
@@ -130,8 +130,8 @@
     <div class="col-lg-6">
       <!-- education -->
       <div class="card mx-2 mb-5 slideanim">
-        <div class="card-header text-center">
-          <h2 class="font-weight-bold p-5">EDUCATION</h2>
+        <div class="card-header">
+          <h2 class="text-center font-weight-bold p-5">EDUCATION</h2>
         </div>
         <div class="card-body row">
           <!-- header -->
@@ -153,8 +153,8 @@
       </div>
       <!-- award -->
       <div class="card mx-2 mb-5 slideanim">
-        <div class="card-header text-center">
-          <h2 class="font-weight-bold p-5">AWARD</h2>
+        <div class="card-header">
+          <h2 class="text-center font-weight-bold p-5">AWARD</h2>
         </div>
         <div class="card-body row">
           <!-- header -->
@@ -193,56 +193,56 @@
       </ul>
       <div class="tab-content">
         <!-- journal list -->
-        <div role="tabpanel" class="tab-pane active" id="journal">
+        <div class="tab-pane container-fluid fade show active" id="journal">
           <p>[J01] R. Zhang, J. Li, <strong>F. Chen</strong> and Y. Zhao, "<a href="http://dx.doi.org/10.1109/TED.2016.2564996" target="_blank">High-Performance Germanium pMOSFETs With NiGe Metal Source/Drain Fabricated by Microwave Annealing</a>", IEEE Trans. on Electron Devices, Vol. 63, No. 7, pp. 2665-2670, July 2016.</p>
         </div>
         <!-- conference list -->
-        <div role="tabpanel" class="tab-pane" id="conference">
+        <div class="tab-pane container-fluid fade" id="conference">
           <p>[C01] Y. Lu, F. Yang, <strong>F. Chen</strong> and P. K. T. Mok, "<a href="http://dx.doi.org/10.1109/ISSCC.2018.8310308" target="_blank">A 500mA analog-assisted digital-LDO-based on-chip distributed power delivery grid with cooperative regulation and IR-drop reduction in 65nm CMOS</a>", IEEE International Solid-State Circuits Conference (ISSCC), pp. 310-312, February 2018.</p>
         </div>
         <!-- presentation list -->
-        <div role="tabpanel" class="tab-pane" id="presentation">
+        <div class="tab-pane container-fluid fade" id="presentation">
           <p>[P01] <strong>F. Chen</strong>, "<a data-fancybox data-type="iframe" data-caption="GTA briefing session sharing" data-src="pub/GTABriefing.pdf" href="">Department GTA breifing session sharing</a>", HKUST, August 24, 2017</p>
         </div>
         <!-- citation list -->
-        <div role="tabpanel" class="tab-pane" id="citation">
+        <div class="tab-pane container-fluid fade" id="citation">
           <p>View Feng Chen's citation statistics on <a href="https://scholar.google.com.hk/citations?user=lVde7xYAAAAJ" target="_blank">Google Citation</a></p>
         </div>
       </div>
     </div>
-    <div class="col-lg-3 align-self-center text-center">
+    <div class="col-lg-3 d-flex justify-content-center align-self-center">
       <span class="fas fa-book logo-lg slideanim"></span>      
     </div>
   </div>
 </div>
 <!-- publication -->
 <div class="container-fluid py-5" id="activity">
-  <h1 class="font-weight-bold text-center py-4">ACTIVITY</h1>
-  <div class="row text-center">
+  <h1 class="text-center font-weight-bold py-4">ACTIVITY</h1>
+  <div class="row">
     <!-- volunteer -->
     <div class="col-sm-6 col-lg-4 slideanim">
-      <span class="fas fa-heartbeat py-4 logo"></span>
-      <h2 class="font-weight-bold py-4">VOLUNTEER</h2>
+      <span class="fas fa-heartbeat d-flex justify-content-center py-4 logo"></span>
+      <h2 class="text-center font-weight-bold py-4">VOLUNTEER</h2>
       <ol>
-        <li class="text-left"><a href="http://connect.ust.hk/opportunities/service_learning_day.html" target="_blank" rel="external">HKUST Service Learning Day</a> (Hike without Trace, Paws for Love, Volunteering at Fung Yuen Butterfly Reserve), Apr. 2017</li>
-        <li class="text-left">Volunteer guide at <a href="http://www.jtia.hk" target="_blank" rel="external">Jao Tsung-I Academy</a>, Hong Kong, 24th Apr. 2016</li>
+        <li><a href="http://connect.ust.hk/opportunities/service_learning_day.html" target="_blank" rel="external">HKUST Service Learning Day</a> (Hike without Trace, Paws for Love, Volunteering at Fung Yuen Butterfly Reserve), Apr. 2017</li>
+        <li>Volunteer guide at <a href="http://www.jtia.hk" target="_blank" rel="external">Jao Tsung-I Academy</a>, Hong Kong, 24th Apr. 2016</li>
       </ol>
     </div>
     <!-- service -->
     <div class="col-sm-6 col-lg-4 slideanim">
-      <span class="fas fa-wrench py-4 logo"></span>
-      <h2 class="font-weight-bold py-4">SERVICE</h2>
+      <span class="fas fa-wrench d-flex justify-content-center py-4 logo"></span>
+      <h2 class="text-center font-weight-bold py-4">SERVICE</h2>
       <ol>
-        <li class="text-left">Contributor of HKUST <a href="http://usthing.ust.hk" target="_blank" rel="external">USThing</a> project (USThing Android app development), check out <a href="https://www.facebook.com/USThing" target="_blank" rel="external">USThing facebook</a> and <a href="https://github.com/usthing" target="_blank" rel="external">Github repo</a></li>
+        <li>Contributor of HKUST <a href="http://usthing.ust.hk" target="_blank" rel="external">USThing</a> project (USThing Android app development), check out <a href="https://www.facebook.com/USThing" target="_blank" rel="external">USThing facebook</a> and <a href="https://github.com/usthing" target="_blank" rel="external">Github repo</a></li>
       </ol>
     </div>
     <!-- sport -->
     <div class="col-sm-6 col-lg-4 slideanim">
-      <span class="fas fa-futbol py-4 logo"></span>
-      <h2 class="font-weight-bold py-4">SPORT</h2>
+      <span class="fas fa-futbol d-flex justify-content-center py-4 logo"></span>
+      <h2 class="text-center font-weight-bold py-4">SPORT</h2>
       <ol>
-        <li class="text-left">2017 Standard Chartered Hong Kong Marathon, 10 km, 0:49:35</li>
-        <li class="text-left">Member of HKUST <a href="http://sports.ust.hk/cgi-bin/sports.php?S=5" target="_blank" rel="external">Sport Climbing Students' Society</a></li>
+        <li>2017 Standard Chartered Hong Kong Marathon, 10 km, 0:49:35</li>
+        <li>Member of HKUST <a href="http://sports.ust.hk/cgi-bin/sports.php?S=5" target="_blank" rel="external">Sport Climbing Students' Society</a></li>
       </ol>
     </div>
   </div>
@@ -276,48 +276,48 @@
 <!-- contact -->
 <div class="container-fluid py-5" id="contact">
   <h1 class="font-weight-bold text-center py-4">CONTACT</h1>
-  <div class="row text-center">
+  <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3 slideanim">
-      <span class="fas fa-map-marker-alt logo-sm py-5"></span>
-      <p>RM3008, CYT Bldg, HKUST, Clear Water Bay, Hong Kong, China</p>
+      <span class="fas fa-map-marker-alt d-flex justify-content-center py-5 logo-sm"></span>
+      <p class="text-center">RM3008, CYT Bldg, HKUST, Clear Water Bay, Hong Kong, China</p>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3 slideanim">
-      <span class="fas fa-envelope logo-sm py-5"></span>
-      <p>Email to <a href="mailto:fchenaf@connect.ust.hk">fchenaf@connect.ust.hk</a></p>
+      <span class="fas fa-envelope d-flex justify-content-center py-5 logo-sm"></span>
+      <p class="text-center">Email to <a href="mailto:fchenaf@connect.ust.hk">fchenaf@connect.ust.hk</a></p>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3 slideanim">
-      <span class="fas fa-user logo-sm py-5"></span>
-      <p>Check out Feng Chen's <a href="https://bojackchen.github.io" target="_blank">Personal Website</a></p>
+      <span class="fas fa-user d-flex justify-content-center py-5 logo-sm"></span>
+      <p class="text-center">Check out Feng Chen's <a href="https://bojackchen.github.io" target="_blank">Personal Website</a></p>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3 slideanim">
-      <span class="fab fa-weixin logo-sm py-5"></span>
-      <p>Check out Feng Chen's <a href="https://bojackchen.github.io/about/wechat" target="_blank">Wechat</a></p>
+      <span class="fab fa-weixin d-flex justify-content-center py-5 logo-sm"></span>
+      <p class="text-center">Check out Feng Chen's <a href="https://bojackchen.github.io/about/wechat" target="_blank">Wechat</a></p>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3 slideanim">
-      <span class="fab fa-500px logo-sm py-5"></span>
-      <p>Check out Feng Chen's <a href="https://500px.com/bojackchen" target="_blank">500px</a></p>
+      <span class="fab fa-500px d-flex justify-content-center py-5 logo-sm"></span>
+      <p class="text-center">Check out Feng Chen's <a href="https://500px.com/bojackchen" target="_blank">500px</a></p>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3 slideanim">
-      <span class="fab fa-github logo-sm py-5"></span>
-      <p>Check out Feng Chen's <a href="https://github.com/bojackchen" target="_blank">GitHub</a></p>
+      <span class="fab fa-github d-flex justify-content-center py-5 logo-sm"></span>
+      <p class="text-center">Check out Feng Chen's <a href="https://github.com/bojackchen" target="_blank">GitHub</a></p>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3 slideanim">
-      <span class="fab fa-linkedin-in logo-sm py-5"></span>
-      <p>Check out Feng Chen's <a href="https://linkedin.com/in/bojackchen" target="_blank">LinkedIn</a></p>
+      <span class="fab fa-linkedin-in d-flex justify-content-center py-5 logo-sm"></span>
+      <p class="text-center">Check out Feng Chen's <a href="https://linkedin.com/in/bojackchen" target="_blank">LinkedIn</a></p>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3 slideanim">
-      <span class="fab fa-behance logo-sm py-5"></span>
-      <p>Check out Feng Chen's <a href="https://www.behance.net/bojackchen" target="_blank">Behance</a></p>
+      <span class="fab fa-behance d-flex justify-content-center py-5 logo-sm"></span>
+      <p class="text-center">Check out Feng Chen's <a href="https://www.behance.net/bojackchen" target="_blank">Behance</a></p>
     </div>
   </div>
 </div>
 <!-- gmap -->
-<div class="bg-light container-fluid p-5" id="gmap">
+<div class="container-fluid bg-light p-5" id="gmap">
   <div class="googleMap mb-5" id="googleMap"></div>
   <img class="img-fluid mb-5" src="image/HKUST.jpg" alt="HKUST" title="Full HKUST view taken by Martin Yeung from above, HKUST, 08/12/2016">
 </div>
 <!-- footer -->
-<footer class="bg-light container-fluid text-center" id="footer">
+<footer class="container-fluid bg-light text-center" id="footer">
   <a href="#top" title="TOP"><span class="fas fa-chevron-up"></span></a>
   <p class="text-muted py-4 mb-0" id="footertext"><span class="far fa-copyright"></span> 2016 Feng Chen. All rights reserved. (<a href="https://github.com/bojackchen/mypage" target="_blank">download</a> this template)</p>
 </footer>
